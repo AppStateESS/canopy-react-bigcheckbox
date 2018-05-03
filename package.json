@@ -1,0 +1,41 @@
+{
+  "name": "canopy-react-bigcheckbox",
+  "version": "0.1.0",
+  "description": "Large checkbox for Canopy",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "prepublish": "rm -rf ./build && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppStateESS/canopy-react-bigcheckbox.git"
+  },
+  "keywords": [
+    "canopy",
+    "react"
+  ],
+  "author": "Matt McNaney <mcnaneym@appstate.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AppStateESS/canopy-react-bigcheckbox/issues"
+  },
+  "homepage": "https://github.com/AppStateESS/canopy-react-bigcheckbox#readme",
+  "peerDependencies": {      
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  }
+}
