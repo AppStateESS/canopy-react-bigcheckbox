@@ -5,42 +5,27 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-    libraryTarget: 'commonjs',
-    publicPath: '/dist/',
+    libraryTarget: 'commonjs2',
   },
   resolve: {
     alias: {
       'react': path.resolve(__dirname, './node_modules/react'),
-      'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
+      'react-dom': path.resolve(__dirname, './node_modules/react-dom')
     }
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.jsx?/,
         include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|bower_components|build)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env']
-          }
+        loader: 'babel-loader',
+        query: {
+          presets: ['env', 'react',]
         }
-      }
+      },
     ]
   },
   externals: {
-    react: {
-      commonjs: "react",
-      commonjs2: "react",
-      amd: "React",
-      root: "React",
-    },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-      amd: "ReactDOM",
-      root: "ReactDOM",
-    },
-  }
+    'react': 'commonjs react'
+  },
 }

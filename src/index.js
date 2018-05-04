@@ -3,7 +3,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const BigCheckbox = ({handle, checked, label,}) => {
-
   const handleIt = () => {
     handle(empty(checked))
   }
@@ -26,7 +25,7 @@ const BigCheckbox = ({handle, checked, label,}) => {
       <i className="far fa-2x fa-square mr-1 text-muted"></i>
     </span>
   )
-
+  
   return (
     <div onClick={handleIt} className="pointer d-flex align-items-center">
       {checkBox}{uncheckBox}
