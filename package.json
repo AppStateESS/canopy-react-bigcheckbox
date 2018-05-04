@@ -1,6 +1,6 @@
 {
   "name": "canopy-react-bigcheckbox",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Large checkbox for Canopy",
   "main": "build/index.js",
   "scripts": {

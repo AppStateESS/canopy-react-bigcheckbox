@@ -1,0 +1,5 @@
+This is a React script for use with Canopy (old name phpWebSite). It assumes you
+have Bootstrap 4 and FontAwesome 5 available.
+A class named "pointer" is used.
+
+.pointer:hover{cursor:pointer}
