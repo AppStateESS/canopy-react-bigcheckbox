@@ -1,7 +1,7 @@
 {
   "name": "canopy-react-bigcheckbox",
-  "version": "0.1.4",
-  "description": "Large checkbox for Canopy",
+  "version": "0.1.5",
+  "description": "Large checkbox for Canopy/phpwebsite",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

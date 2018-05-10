@@ -1,4 +1,4 @@
-This is a React script for use with Canopy (old name phpWebSite). It assumes you
+This is a React script for use with Canopy/phpWebSite. It assumes you
 have Bootstrap 4 and FontAwesome 5 available.
 A class named "pointer" is used.
 
@@ -6,6 +6,7 @@ A class named "pointer" is used.
 
 Example:
 
+~~~~
 this.state = {yesFire: true}
 
 const setValue = (val) => {
@@ -16,3 +17,4 @@ const setValue = (val) => {
   label="Fire Wave Motion Gun" 
   checked={this.state.yesFire} 
   handle={setValue}/>
+~~~~
