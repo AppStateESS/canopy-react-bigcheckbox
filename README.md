@@ -1,4 +1,6 @@
-This is a React script for use with Canopy/phpWebSite. It assumes you
+## canopy-react-bigcheckbox
+
+This is a React script for use with AppStateESS/Canopy. It assumes you
 have Bootstrap 4 and FontAwesome 5 available.
 A class named "pointer" is used.
 
