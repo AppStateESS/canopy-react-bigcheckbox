@@ -1,6 +1,7 @@
 'use strict'
 import React from 'react'
 import PropTypes from 'prop-types'
+import '../css/style.css'
 
 const BigCheckbox = ({handle, checked, label,}) => {
   const handleIt = () => {
@@ -31,8 +32,8 @@ const BigCheckbox = ({handle, checked, label,}) => {
       {checkBox}{uncheckBox}
       <span
         className={!empty(checked)
-          ? 'text-success'
-          : 'text-muted'}>{label}</span>
+          ? 'text-success bigcheck-label'
+          : 'text-muted bigcheck-label'}>{label}</span>
     </div>
   )
 }
