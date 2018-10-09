@@ -1,6 +1,6 @@
 {
-  "name": "canopy-react-bigcheckbox",
-  "version": "0.1.10",
+  "name": "@essappstate/canopy-react-bigcheckbox",
+  "version": "0.2.0",
   "description": "Large checkbox for Canopy/phpwebsite",
   "main": "build/index.js",
   "scripts": {
