@@ -11,14 +11,25 @@ A class named "pointer" is used.
 Example:
 
 ```javascript
-this.state = {yesFire: true}
 
-const setValue = (val) => {
-  this.setState(yesFire : val)
+import React from 'react'
+import BigCheckBox from '@essappstate/canopy-react-bigcheckbox'
+
+class Example extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {yesFire: true}
+  }
+
+  setValue(val) {
+    this.setState(yesFire : val)
+  }
+
+  render() {
+    return (<BigCheckbox
+      label="Fire Wave Motion Gun"
+      checked={this.state.yesFire}
+      handle={setValue}/>)
+  }
 }
-
-<BigCheckbox
-  label="Fire Wave Motion Gun" 
-  checked={this.state.yesFire} 
-  handle={setValue}/>
 ```

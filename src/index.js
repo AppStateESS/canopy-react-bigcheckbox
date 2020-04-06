@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import '../css/style.css'
 
-const BigCheckbox = ({handle, checked, label,}) => {
+const BigCheckbox = ({handle, checked, label}) => {
   const handleIt = () => {
     handle(empty(checked))
   }
@@ -13,41 +13,50 @@ const BigCheckbox = ({handle, checked, label,}) => {
   }
 
   const checkBox = (
-    <span className={parseInt(checked) == 1
-        ? 'd-inline'
-        : 'd-none'}>
+    <span className={parseInt(checked) == 1 ? 'd-inline' : 'd-none'}>
       <i className="fas fa-2x fa-check-square mr-1 text-success"></i>
     </span>
   )
   const uncheckBox = (
-    <span className={parseInt(checked) == 1
-        ? 'd-none'
-        : 'd-inline'}>
+    <span className={parseInt(checked) == 1 ? 'd-none' : 'd-inline'}>
       <i className="far fa-2x fa-square mr-1 text-muted"></i>
     </span>
   )
-  
+
   return (
     <div onClick={handleIt} className="pointer d-flex align-items-center">
-      {checkBox}{uncheckBox}
+      {checkBox}
+      {uncheckBox}
       <span
-        className={!empty(checked)
-          ? 'text-success bigcheck-label'
-          : 'text-muted bigcheck-label'}>{label}</span>
+        className={
+          !empty(checked)
+            ? 'text-success bigcheck-label'
+            : 'text-muted bigcheck-label'
+        }>
+        {label}
+      </span>
     </div>
   )
 }
 
-const empty = (value) => {
-  return (value === undefined || value === null || value === 0 || value === '0' || value.length === 0 || value === false)
+const empty = value => {
+  return (
+    value === undefined ||
+    value === null ||
+    value === 0 ||
+    value === '0' ||
+    value.length === 0 ||
+    value === false
+  )
 }
-
 
 BigCheckbox.propTypes = {
   label: PropTypes.string,
-  checked: PropTypes.oneOfType(
-    [PropTypes.bool, PropTypes.string, PropTypes.number,]
-  ),
+  checked: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+    PropTypes.number
+  ]),
   handle: PropTypes.func.isRequired
 }
 
