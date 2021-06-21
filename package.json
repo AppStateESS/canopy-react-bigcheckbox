@@ -1,6 +1,6 @@
 {
   "name": "@essappstate/canopy-react-bigcheckbox",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "description": "Large checkbox for Canopy/phpwebsite",
   "main": "build/index.js",
   "scripts": {
@@ -23,18 +23,18 @@
   },
   "homepage": "https://github.com/AppStateESS/canopy-react-bigcheckbox#readme",
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
-    "css-loader": "^5.0.1",
+    "css-loader": "^5.2.6",
     "prop-types": "^15.7.2",
     "style-loader": "^2.0.0",
-    "webpack": "^5.17.0",
-    "webpack-cli": "^4.4.0"
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
   }
 }
