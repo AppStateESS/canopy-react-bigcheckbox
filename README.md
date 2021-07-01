@@ -26,7 +26,7 @@ class Example extends React.Component {
   }
 
   render() {
-    return (<BigCheckbox
+    return (<BigCheckBox
       label="Fire Wave Motion Gun"
       checked={this.state.yesFire}
       handle={setValue}/>)
